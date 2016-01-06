@@ -103,23 +103,23 @@ describe('Thermostat', function() {
     });
   });
 
-  describe('#displayColour', function() {
+  describe('#energyUsage', function() {
 
     it('returns green if temperature is below LOW_USAGE_TEMPERATURE', function () {
       for (i=thermostat.DEFAULT_TEMPERATURE; i>(thermostat.LOW_USAGE_TEMPERATURE - 1); i--) {
         thermostat.downButton();
       }
-      expect(thermostat.displayColour()).toEqual('low-usage');
+      expect(thermostat.energyUsage()).toEqual('low-usage');
     });
     it ('returns yellow if temperature is below HIGH_USAGE_TEMPERATURE', function () {
       thermostat.temperature = thermostat.DEFAULT_TEMPERATURE;
-      expect(thermostat.displayColour()).toEqual('medium-usage');
+      expect(thermostat.energyUsage()).toEqual('medium-usage');
     });
     it ('returns red if temperature is above 25', function () {
       for (i=thermostat.DEFAULT_TEMPERATURE; i<thermostat.HIGH_USAGE_TEMPERATURE; i++) {
         thermostat.upButton();
       }
-      expect(thermostat.displayColour()).toEqual('high-usage');
+      expect(thermostat.energyUsage()).toEqual('high-usage');
     });
   });
 });

@@ -38,7 +38,7 @@ Thermostat.prototype.powerSavingSwitch = function () {
   else if (this.isPowerSavingOn() === true) {this.powerSavingMode = false;}
 };
 
-Thermostat.prototype.displayColour = function () {
+Thermostat.prototype.energyUsage = function () {
   if (this.temperature < this.LOW_USAGE_TEMPERATURE) {return 'low-usage';}
   if (this.temperature < this.HIGH_USAGE_TEMPERATURE) {return 'medium-usage';}
   if (this.temperature >= this.HIGH_USAGE_TEMPERATURE) {return 'high-usage';}

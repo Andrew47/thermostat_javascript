@@ -31,22 +31,22 @@
 
 
     function color_generator() {
-      if (thermostat.displayColour() == 'low-usage') {
+      if (thermostat.energyUsage() == 'low-usage') {
         $("#temperature").css('color', 'green');
       }
 
-      if (thermostat.displayColour() == 'medium-usage') {
+      if (thermostat.energyUsage() == 'medium-usage') {
         $("#temperature").css('color', 'orange');
       }
 
-      if (thermostat.displayColour() == 'high-usage') {
+      if (thermostat.energyUsage() == 'high-usage') {
         $("#temperature").css('color', 'red');
       }
     }
 
     function updateTemperature() {
       $('#temperature').text(thermostat.temperature);
-      // $('#temperature').attr('class', thermostat.displayColour());
+      // $('#temperature').attr('class', thermostat.energyUsage());
       color_generator();
     }
 
