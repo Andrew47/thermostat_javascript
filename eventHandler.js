@@ -3,7 +3,17 @@
     alert( "welcome" );
 
     var thermostat = new Thermostat();
+
     updateTemperature();
+
+    $("#temperature_up").hover(
+      function () { $('h2').css("backgroundColor", "rgb(255, 229, 255)"); },
+      function () { $('h2').css("backgroundColor", "white"); });
+
+      $("#temperature_down").hover(
+        function () { $('h2').css("backgroundColor", "rgb(229, 242, 255)"); },
+        function () { $('h2').css("backgroundColor", "white"); });
+
 
 
     $("#temperature_up").click( function () {
