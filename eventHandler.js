@@ -75,8 +75,4 @@
     get_data($('#name_input').val());
   });
 
-
-
-
-
   });

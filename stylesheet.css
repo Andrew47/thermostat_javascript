@@ -6,6 +6,14 @@ body {
   text-align: center;
 }
 
+td {
+  text-align: justify;
+}
+
+button, input {
+  margin-bottom: 2em;
+}
+
 .low-usage {
   color: green;
 }
@@ -21,4 +29,6 @@ body {
 table {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 8.5em;
+  padding-right: 0em;
 }
