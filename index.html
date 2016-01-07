@@ -19,6 +19,32 @@
   <script src="src/thermostat.js"></script>
   <script src="jquery.js"></script>
   <script src='eventHandler.js'></script>
+
+  <input type='text' id='name_input' placeholder="Enter a City"></input>
+  <input type='button' id="submit_name" value='What is the weather?'></input>
+
+  <table id="weather" style="width: 30%">
+    <tr>
+      <td>City:</td>
+      <td id="name"></td>
+    </tr>
+    <tr>
+      <td><strong>Weather</strong></td>
+    </tr>
+    <tr>
+      <td>Condition:</td>
+      <td id="condition"></td>
+    </tr>
+    <tr>
+      <td>Temperature:</td>
+      <td id="retrieved_temperature"></td>
+    </tr>
+    <tr>
+      <td>Wind Speed:</td>
+      <td id="wind"></td>
+    </tr>
+  </table>
+  
 </body>
 
 </html>

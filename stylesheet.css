@@ -17,3 +17,8 @@ body {
 .high-usage {
   color: red;
 }
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
