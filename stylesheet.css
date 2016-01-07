@@ -6,7 +6,7 @@ body {
   text-align: center;
 }
 
-/*.low-usage {
+.low-usage {
   color: green;
 }
 
@@ -16,4 +16,4 @@ body {
 
 .high-usage {
   color: red;
-}*/
+}
