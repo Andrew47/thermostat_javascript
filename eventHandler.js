@@ -1,6 +1,6 @@
   $( document ).ready(function () {
 
-    alert( "welcome" );
+    alert( "Welcome user - type your city for the current weather, then decide how to set the thermostat." );
 
     var thermostat = new Thermostat();
 
@@ -64,7 +64,7 @@
 
     success: function( json ) {
       $( "#name" ).text( json.name );
-      $("#condition").text( json.weather[0].main + ': ' + json.weather[0].description);
+      $("#condition").text( json.weather[0].main);
       $("#retrieved_temperature").text( Math.round(json.main.temp) + 'C');
       $("#wind").text(json.wind.speed + ' meter/sec');
     }

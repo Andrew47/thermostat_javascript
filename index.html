@@ -13,37 +13,35 @@
     <button id='temperature_up'>Up</button>
     <button id='temperature_down'>Down</button>
     <p>Power Saving On? <span id='power_saving_status'></span></p>
-    <button id='power_saving_switch'>Power Saving</button>
-    <button id='temperature_reset'>Reset Temperature</button>
+    <button class='lower_button' id='power_saving_switch'>Power Saving</button>
+    <button class='lower_button' id='temperature_reset'>Reset Temperature</button>
   </p>
   <script src="src/thermostat.js"></script>
   <script src="jquery.js"></script>
   <script src='eventHandler.js'></script>
 
   <input type='text' id='name_input' placeholder="Enter a City"></input>
-  <input type='button' id="submit_name" value='What is the weather?'></input>
+  <input type='button' id="submit_name" class='lower_button' value='What is the weather?'></input>
 
   <table id="weather" style="width: 30%">
     <tr>
-      <td>City:</td>
+      <td><strong>City:</strong></td>
       <td id="name"></td>
     </tr>
     <tr>
-      <td><strong>Weather</strong></td>
-    </tr>
-    <tr>
-      <td>Condition:</td>
+      <td><strong>Weather:</strong></td>
       <td id="condition"></td>
     </tr>
     <tr>
-      <td>Temperature:</td>
+      <td><strong>Temperature:</strong></td>
       <td id="retrieved_temperature"></td>
     </tr>
     <tr>
-      <td>Wind Speed:</td>
+      <td><strong>Wind Speed:</strong></td>
       <td id="wind"></td>
     </tr>
   </table>
+  <hr>
   <p>Table created using data from <a href="http://openweathermap.org">OpenWeatherMap's</a> API.</p>
 
 </body>
