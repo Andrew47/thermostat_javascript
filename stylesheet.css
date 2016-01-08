@@ -1,7 +1,7 @@
 h1 {
-  color: red;
   background-color: rgb(229, 242, 255);
-  font-family: impact;
+  padding-top: 0.2em;
+  margin-top: 0em;
 }
 
 body {
