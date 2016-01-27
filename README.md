@@ -15,10 +15,15 @@ $ cd thermostat_javascript
 
 ## Usage
 
-Open index.html. You should see the following:
-![alt 'image of screen'][/image_of_screen.png]
+* Open index.html.
 
-Click 'Up' and 'Down' to change the displayed temperature.
+* Click 'Up' and 'Down' to change the displayed temperature.
+
+* Click 'Power Saving Mode' to toggle a 25C cap on the maximum temperature that can be set.
+
+* Click 'Reset Temperature' to reset the temperature to 20C.
+
+* Type the name of a city and then click 'What is the weather?' to get the weather for that city.
 
 ## Contributors
 
