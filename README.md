@@ -16,7 +16,7 @@ $ cd thermostat_javascript
 ## Usage
 
 Open index.html. You should see the following:
-[alt 'image of screen']('/image_of_screen')
+![alt 'image of screen'][/image_of_screen.png]
 
 Click 'Up' and 'Down' to change the displayed temperature.
 
